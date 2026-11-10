@@ -1,0 +1,258 @@
+.profile-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f8f5;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  margin: 0 0 8px;
+  color: #1d3325;
+  font-size: 30px;
+}
+
+.profile-header p {
+  margin: 0;
+  color: #68756d;
+  font-size: 15px;
+}
+
+.profile-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #dce7de;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(29, 51, 37, 0.06);
+}
+
+.profile-avatar {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #397247;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.profile-card h2 {
+  margin: 0;
+  color: #1d3325;
+  font-size: 24px;
+}
+
+.profile-role {
+  margin: 8px 0 28px;
+  color: #68756d;
+}
+
+.profile-details {
+  text-align: left;
+  border-top: 1px solid #e5ece6;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5ece6;
+}
+
+.profile-detail span {
+  color: #68756d;
+  font-size: 14px;
+}
+
+.profile-detail strong {
+  color: #1d3325;
+  font-size: 14px;
+  text-align: right;
+}
+
+.status-active {
+  color: #397247 !important;
+}
+
+.edit-profile-button {
+  margin-top: 28px;
+  padding: 13px 28px;
+  background: #397247;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edit-profile-button:hover {
+  background: #2d5b39;
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 22px;
+  }
+
+  .profile-card {
+    padding: 25px 18px;
+  }
+
+  .profile-detail {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .profile-detail strong {
+    text-align: left;
+  }
+}
+.profile-form {
+  text-align: left;
+}
+
+.profile-form h2 {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.profile-form-group {
+  margin-bottom: 20px;
+}
+
+.profile-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1d3325;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-form-group input,
+.profile-form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #1d3325;
+  border: 1px solid #cbd8ce;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.profile-form-group input:focus,
+.profile-form-group select:focus {
+  outline: none;
+  border-color: #397247;
+  box-shadow: 0 0 0 3px rgba(57, 114, 71, 0.15);
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.save-profile-button,
+.cancel-profile-button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.save-profile-button {
+  background: #397247;
+  color: #ffffff;
+}
+
+.save-profile-button:hover {
+  background: #2d5b39;
+}
+
+.cancel-profile-button {
+  background: #e8eee9;
+  color: #1d3325;
+}
+
+.cancel-profile-button:hover {
+  background: #d8e3da;
+}
+
+@media (max-width: 600px) {
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .save-profile-button,
+  .cancel-profile-button {
+    width: 100%;
+  }
+}
+.back-dashboard-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #397247;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-dashboard-link:hover {
+  color: #2d5b39;
+  text-decoration: underline;
+}
+.profile-top-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.dashboard-button {
+  display: inline-block;
+  padding: 15px 24px;
+  background: #397247;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.dashboard-button:hover {
+  background: #2d5b39;
+}
+
+@media (max-width: 600px) {
+  .profile-top-section {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .dashboard-button {
+    align-self: flex-start;
+  }
+}
