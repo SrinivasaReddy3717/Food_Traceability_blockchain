@@ -1,0 +1,258 @@
+/* Verification Page */
+
+.verification-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f9f6;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.verification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.verification-header h1 {
+  color: #1d3325;
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.verification-header p {
+  color: #68756d;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Verification Card */
+
+.verification-card {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(35, 107, 60, 0.06);
+}
+
+.verification-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.verification-card h2 {
+  color: #1d3325;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.verification-card p {
+  color: #68756d;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* Form */
+
+.verification-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.verification-form input {
+  flex: 1;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  background: white;
+  color: #1d3325;
+  border: 1px solid #cbd8ce;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.verification-form input::placeholder {
+  color: #68756d;
+  opacity: 1;
+}
+
+.verification-form input:focus {
+  border-color: #236b3c;
+  box-shadow: 0 0 0 3px rgba(35, 107, 60, 0.15);
+}
+
+.verification-form button {
+  padding: 14px 24px;
+  background: #376f45;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.verification-form button:hover {
+  background: #285936;
+}
+
+.verification-card small {
+  color: #849187;
+  font-size: 13px;
+}
+
+/* Result Section */
+
+.verification-result {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(35, 107, 60, 0.06);
+}
+
+/* Verified Heading */
+
+.verified-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #edf2ee;
+  margin-bottom: 25px;
+}
+
+.verified-symbol {
+  width: 60px;
+  height: 60px;
+  background: #dff4e4;
+  color: #23733b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.verified-heading h2 {
+  color: #23733b;
+  font-size: 25px;
+  margin: 0 0 6px;
+}
+
+.verified-heading p {
+  color: #68756d;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Verification Details */
+
+.verification-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.verification-details > div {
+  background: #f5f9f6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.verification-details span {
+  display: block;
+  color: #849187;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.verification-details strong {
+  color: #1d3325;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.hash-detail {
+  grid-column: span 2;
+}
+
+/* Verification Note */
+
+.verification-note {
+  margin-top: 25px;
+  padding: 15px 18px;
+  background: #fff8df;
+  color: #866b18;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Error Message */
+
+.verification-error {
+  text-align: center;
+  padding: 20px;
+}
+
+.verification-error > div {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.verification-error h2 {
+  color: #b84242;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.verification-error p {
+  color: #68756d;
+  font-size: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .verification-page {
+    padding: 25px 20px;
+  }
+
+  .verification-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .verification-form {
+    flex-direction: column;
+  }
+
+  .verification-card,
+  .verification-result {
+    padding: 25px 20px;
+  }
+
+  .verification-details {
+    grid-template-columns: 1fr;
+  }
+
+  .hash-detail {
+    grid-column: span 1;
+  }
+
+  .verified-heading {
+    align-items: flex-start;
+  }
+}

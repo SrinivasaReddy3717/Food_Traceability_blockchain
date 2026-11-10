@@ -1,0 +1,201 @@
+.register-product-page {
+  min-height: 100vh;
+  padding: 38px;
+  box-sizing: border-box;
+  background: #f4f8f4;
+}
+
+.register-product-header {
+  margin-bottom: 30px;
+}
+
+.register-eyebrow {
+  margin: 0 0 10px;
+  color: #397247;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.register-product-header h1 {
+  margin: 0 0 10px;
+  color: #1d3325;
+  font-size: 30px;
+}
+
+.register-product-header p:last-child {
+  margin: 0;
+  color: #68756d;
+  font-size: 15px;
+}
+
+.registration-card {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #dce7de;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(29, 51, 37, 0.05);
+}
+
+.registration-card-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5ece6;
+}
+
+.registration-card-header h2 {
+  margin: 0 0 8px;
+  color: #1d3325;
+  font-size: 22px;
+}
+
+.registration-card-header p {
+  margin: 0;
+  color: #68756d;
+  font-size: 13px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.registration-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.registration-form-group label {
+  color: #1d3325;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.registration-form-group input,
+.registration-form-group select,
+.registration-form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #1d3325;
+  border: 1px solid #cbd8ce;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.registration-form-group input::placeholder,
+.registration-form-group textarea::placeholder {
+  color: #8a968d;
+}
+
+.registration-form-group input:focus,
+.registration-form-group select:focus,
+.registration-form-group textarea:focus {
+  outline: none;
+  border-color: #397247;
+  box-shadow: 0 0 0 3px rgba(57, 114, 71, 0.13);
+}
+
+.registration-form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.registration-form-group input[type='file'] {
+  padding: 11px;
+  cursor: pointer;
+}
+
+.registration-form-group small {
+  color: #8a968d;
+  font-size: 12px;
+}
+
+.registration-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border-top: 1px solid #e5ece6;
+}
+
+.register-product-button {
+  padding: 14px 28px;
+  background: #397247;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.register-product-button:hover {
+  background: #2d5b39;
+}
+
+@media (max-width: 700px) {
+  .register-product-page {
+    padding: 22px;
+  }
+
+  .registration-card {
+    padding: 22px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .registration-actions {
+    justify-content: stretch;
+  }
+
+  .register-product-button {
+    width: 100%;
+  }
+}
+.register-product-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.register-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  background: #397247;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.register-back-button:hover {
+  background: #2d5b39;
+}
+
+@media (max-width: 700px) {
+  .register-product-header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,297 @@
+/* Track Food Page */
+
+.track-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f9f6;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.track-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.track-header h1 {
+  color: #1d3325;
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.track-header p {
+  color: #68756d;
+  font-size: 15px;
+  margin: 0;
+}
+
+.back-dashboard {
+  background: #376f45;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-dashboard:hover {
+  background: #285936;
+}
+
+/* Search Card */
+
+.track-search-card {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(35, 107, 60, 0.06);
+  margin-bottom: 35px;
+}
+
+.track-search-card h2 {
+  color: #1d3325;
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.track-search-card p {
+  color: #68756d;
+  margin-bottom: 25px;
+}
+
+.track-search-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.track-search-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #cbd8ce;
+  border-radius: 8px;
+  background: white;
+  color: #1d3325;
+  font-size: 15px;
+  outline: none;
+}
+
+.track-search-form input::placeholder {
+  color: #68756d;
+  opacity: 1;
+}
+
+.track-search-form input:focus {
+  border-color: #236b3c;
+  box-shadow: 0 0 0 3px rgba(35, 107, 60, 0.15);
+}
+
+.track-search-form button {
+  padding: 14px 24px;
+  background: #376f45;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.track-search-form button:hover {
+  background: #285936;
+}
+
+.track-search-card small {
+  color: #849187;
+  font-size: 13px;
+}
+
+/* Trace Result */
+
+.trace-result {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(35, 107, 60, 0.06);
+}
+
+.product-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #edf2ee;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.result-label {
+  color: #849187;
+  font-size: 13px;
+}
+
+.product-result-header h2 {
+  color: #1d3325;
+  font-size: 28px;
+  margin: 6px 0 0;
+}
+
+.result-status {
+  background: #dff4e4;
+  color: #23733b;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Product Details */
+
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.product-details div {
+  background: #f5f9f6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-details span {
+  display: block;
+  color: #849187;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.product-details strong {
+  color: #1d3325;
+  font-size: 15px;
+}
+
+/* Journey */
+
+/* Journey */
+
+.journey-title {
+  color: #1d3325;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.journey {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.journey-group {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.journey-step {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.journey-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 12px;
+  background: #eef3ef;
+  border: 3px solid #cbd8ce;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+.journey-step.completed .journey-icon {
+  background: #dff4e4;
+  border-color: #376f45;
+}
+
+.journey-step h3 {
+  color: #1d3325;
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.journey-step p {
+  color: #68756d;
+  font-size: 12px;
+  margin: 0;
+  min-height: 18px;
+}
+
+.journey-line {
+  flex: 0 0 35px;
+  height: 3px;
+  background: #cbd8ce;
+  margin-top: 32px;
+}
+
+.journey-step.completed + .journey-line {
+  background: #376f45;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .product-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey {
+    flex-wrap: wrap;
+  }
+
+  .journey-line {
+    display: none;
+  }
+
+  .journey-step {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .track-page {
+    padding: 25px 20px;
+  }
+
+  .track-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .track-search-form {
+    flex-direction: column;
+  }
+
+  .product-details {
+    grid-template-columns: 1fr;
+  }
+
+  .trace-result,
+  .track-search-card {
+    padding: 25px 20px;
+  }
+}

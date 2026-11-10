@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables & secrets
+.env
+**/.env
+*.env.local
+
+# Build & logs
+dist/
+**/dist/
+dist-ssr/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Local Ganache chain state (regenerate via npm run ganache / blockchain:deploy)
+blockchain/ganache-db/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sw?

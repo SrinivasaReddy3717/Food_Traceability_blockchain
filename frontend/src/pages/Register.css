@@ -1,0 +1,196 @@
+/* Register Page */
+
+.register-page {
+  min-height: 100vh;
+  background: #f5f9f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 1050px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(35, 107, 60, 0.12);
+}
+
+/* Left Information Section */
+
+.register-info {
+  background: #376f45;
+  color: white;
+  padding: 60px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.register-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
+
+.register-info h1 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.register-info > p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.register-benefits {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.register-benefits p {
+  font-size: 17px;
+  margin: 22px 0;
+}
+
+/* Right Form Section */
+
+.register-form-section {
+  padding: 45px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-form-section h2 {
+  color: #1d3325;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-subtitle {
+  color: #68756d;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* Form */
+
+.register-form-section .form-group {
+  margin-bottom: 18px;
+}
+
+.register-form-section .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d3325;
+}
+
+.register-form-section .form-group input {
+  width: 100%;
+  padding: 13px 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #1d3325;
+  border: 1px solid #cbd8ce;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-form-section .form-group input::placeholder {
+  color: #68756d;
+  opacity: 1;
+}
+
+.register-form-section .form-group input:focus {
+  border-color: #236b3c;
+  box-shadow: 0 0 0 3px rgba(35, 107, 60, 0.15);
+}
+
+/* Submit Button */
+
+.register-submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  background: #376f45;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.register-submit:hover {
+  background: #285936;
+  transform: translateY(-1px);
+}
+
+/* Login Link */
+
+.login-link {
+  text-align: center;
+  color: #68756d;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.login-link a {
+  color: #236b3c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .register-container {
+    grid-template-columns: 1fr;
+  }
+
+  .register-info {
+    padding: 35px 25px;
+  }
+
+  .register-logo {
+    margin-bottom: 25px;
+  }
+
+  .register-info h1 {
+    font-size: 32px;
+  }
+
+  .register-info > p {
+    font-size: 16px;
+  }
+
+  .register-benefits {
+    display: none;
+  }
+
+  .register-form-section {
+    padding: 35px 25px;
+  }
+}
