@@ -19,6 +19,9 @@ yarn-debug.log*
 # Local Ganache chain state (regenerate via npm run ganache / blockchain:deploy)
 blockchain/ganache-db/
 
+# Presentation files (keep local, do not upload to GitHub)
+*.pptx
+
 # OS & Editor files
 .DS_Store
 Thumbs.db
